@@ -1,3 +1,3 @@
-# tasks-manager
+# My-cv
 
-http://giladt.com/tasks-manager/src/index.html
+http://giladt.com/
