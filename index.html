@@ -7,18 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- inject:css -->
-    <link rel='stylesheet' href='app/components/bootstrap/dist/css/bootstrap.css?v=1527'>
-    <link rel='stylesheet' href='app/src/css/style.css?v=1527'>
+    <link rel='stylesheet' href='app/components/bootstrap/dist/css/bootstrap.css?v=508'>
+    <link rel='stylesheet' href='app/components/components-font-awesome/css/font-awesome.css?v=508'>
+    <link rel='stylesheet' href='app/src/css/style.css?v=508'>
+    <link rel='stylesheet' href='app/src/js/gt-animation/gt-animation.css?v=508'>
     <!-- endinject -->
 
     <!-- inject:js -->
-    <script src='app/components/jquery/dist/jquery.js?v=1527'></script>
-    <script src='app/components/angular/angular.js?v=1527'></script>
-    <script src='app/components/angular-bootstrap/ui-bootstrap-tpls.js?v=1527'></script>
-    <script src='app/src/js/app.module.js?v=1527'></script>
-    <script src='app/src/js/ng-template.js?v=1527'></script>
-    <script src='app/src/js/app.module.config.js?v=1527'></script>
-    <script src='app/src/js/app.module.bootstrap.js?v=1527'></script>
+    <script src='app/components/jquery/dist/jquery.js?v=508'></script>
+    <script src='app/components/angular/angular.js?v=508'></script>
+    <script src='app/components/angular-bootstrap/ui-bootstrap-tpls.js?v=508'></script>
+    <script src='app/src/js/app.module.js?v=508'></script>
+    <script src='app/src/js/gt-animation/gt-animation.module.js?v=508'></script>
+    <script src='app/src/js/gt-animation/gt-animation.drv.js?v=508'></script>
+    <script src='app/src/js/ng-template.js?v=508'></script>
+    <script src='app/src/js/app.module.config.js?v=508'></script>
+    <script src='app/src/js/gt-animation/gt-animation.module.config.js?v=508'></script>
+    <script src='app/src/js/app.module.bootstrap.js?v=508'></script>
     <!-- endinject -->
 
 
@@ -48,25 +53,42 @@
 
         <article class="cv-text">
             <h1 class="title">קורות חיים - גלעד טקוני</h1>
-            <div>
-                <span class="question">אז אך קוראים לי?</span>
-                גלעד טקוני
+
+            <div id="question_wrapper" class="question-wrapper" gt-animation>
+                <div class="question disable">
+                    <span class="title">אז אך קוראים לי?</span>
+                    <span>גלעד טקוני</span>
+                </div>
+
+                <div class="question disable">
+                    <span class="title">איפה אני מתגורר?</span>
+                    <span>ראשון לציון</span>
+                </div>
+                <div class="question disable">
+                    <span class="title">בא לכם לשלוח לי מייל?</span>
+                    gilad1987@gmail.com
+                </div>
+                <div class="question disable">
+                    <span class="title">מתי נולדתי אתם שואלים?</span>
+                    1987
+                </div>
             </div>
 
+            <br>
+
             <div>
-                <span class="question">איפה אני מתגורר?</span>
-                ראשון לציון
-            </div>
-            <div>
-                <span class="question">בא לכם לשלוח לי מייל?</span>
-                gilad1987@gmail.com
-            </div>
-            <div>
-                <span class="question">מתי נולדתי אתם שואלים?</span>
-                1987
+                <span> אני נמצא ב..</span>
+                <a href="https://www.linkedin.com/profile/view?id=276843983&trk=nav_responsive_tab_profile" class='icon linkedin' target="_blank" title="linkedin"></a>
+                <a href="https://github.com/gilad1987" class='icon github' target="_blank"></a>
+                <a href="https://www.facebook.com/giladtakoni" class='icon facebook' target="_blank"></a>
             </div>
 
-            <br><br>
+            <br>
+            <div>
+                <sapn>רוצים לשמור לכם עותק?</sapn>
+                <a href="#"><i class="fa fa-file-word-o"></i></a>
+                <a href="#"><i class="fa fa-file-pdf-o"></i></a>
+            </div>
 
             <div class="title">ניסיון תעסוקתי</div>
             <table class="experience">
@@ -109,11 +131,11 @@
             <table class="education">
                 <tr>
                     <td class="time">2014</td>
-                    <td>קורס AngularJS  במכללת 500TECH.</td>
+                    <td>קורס Angular במכללת 500TECH.</td>
                 </tr>
                 <tr>
                     <td class="time">2012</td>
-                    <td>קורס webmaster php5  במכללת HACKERU</td>
+                    <td>קורס webmaster php5 במכללת HackerU</td>
                 </tr>
             </table>
             <div class="title">טכנולוגיות</div>

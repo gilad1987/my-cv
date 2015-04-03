@@ -1,5 +1,7 @@
 (function () {
 
-    angular.module('MyCV',[]);
+    angular.module('MyCV',[
+        'GtAnimation'
+    ]);
 
 })();

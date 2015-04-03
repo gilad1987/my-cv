@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.question-wrapper{position: relative;}
+.question-wrapper .question{position:relative; right:0px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+}
+.question-wrapper .disable{right:-100%;}
