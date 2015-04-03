@@ -42,14 +42,19 @@ var SCRIPTS_SRC = [
 ];
 
 var STYLES_SRC = [
-    'app/components/bootstrap/dist/css/bootstrap.css',
-    'app/components/components-font-awesome/css/font-awesome.css',
     'app/src/css/*.css',
     'app/src/css/**/*.css',
     'app/src/scss/**/*.scss',
     'app/src/scss/*.scss',
     'app/src/js/**/*.css'
 ];
+
+var STYLE_COMPONENTS = [
+    'app/components/bootstrap/dist/css/bootstrap.css',
+    'app/components/components-font-awesome/css/font-awesome.css',
+];
+
+STYLES_SRC = STYLE_COMPONENTS.concat(STYLES_SRC);
 
 var NG_HTML_TEMPLATES_SRC =[
     'app/src/js/**/*.html',
@@ -143,13 +148,20 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('app/src/css'));
 });
 
-/* ------------------------------------- default --------------------------------------------*/
+/* ------------------------------------- dev --------------------------------------------*/
 
 gulp.task('dev',[
         'templates:developer',
         'watch:injector_js_css_to_html',
         'watch:ng-templates',
         'watch:sass'
+    ]
+);
+
+/* ------------------------------------- build --------------------------------------------*/
+
+gulp.task('build',[
+
     ]
 );
 
