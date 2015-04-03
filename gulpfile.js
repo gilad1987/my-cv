@@ -56,7 +56,7 @@ var NG_HTML_TEMPLATES_SRC =[
     'app/src/ng-templates/**/*.tpl.html'
 ];
 
-var ANGULAR_MODULE_NAME = 'TasksManager';
+var ANGULAR_MODULE_NAME = 'MyCV';
 
 var VERSION = (function(){
     var min,max;
