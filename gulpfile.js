@@ -4,12 +4,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat');
 
 var SCRIPTS_SRC = [
-    'app/components/jquery/dist/jquery.js',
-    'app/components/angular/angular.js',
-    'app/components/angular-ui-router/release/angular-ui-router.js',
-    'app/components/angular-bootstrap/ui-bootstrap-tpls.js',
-    'app/components/angular-recursion/angular-recursion.js',
-
     'app/app/src/js/**/*.services.module.js',
     'app/app/src/js/**/*.directives.module.js',
     'app/app/src/js/**/*.controllers.module.js',
@@ -41,6 +35,16 @@ var SCRIPTS_SRC = [
     'app/src/js/angular.bootstrap.js'
 ];
 
+var SCRIPT_COMPONENTS = [
+    'app/components/jquery/dist/jquery.js',
+    'app/components/angular/angular.js',
+    'app/components/angular-ui-router/release/angular-ui-router.js',
+    'app/components/angular-bootstrap/ui-bootstrap-tpls.js',
+    'app/components/angular-recursion/angular-recursion.js',
+];
+
+SCRIPTS_SRC = SCRIPT_COMPONENTS.concat(SCRIPTS_SRC);
+
 var STYLES_SRC = [
     'app/src/css/*.css',
     'app/src/css/**/*.css',
@@ -53,6 +57,11 @@ var STYLE_COMPONENTS = [
     'app/components/bootstrap/dist/css/bootstrap.css',
     'app/components/components-font-awesome/css/font-awesome.css',
 ];
+
+var DIST_CSS = 'dist/css/style.css';
+var DIST_JS = 'dist/js/script.js';
+
+var IS_DEV = false;
 
 STYLES_SRC = STYLE_COMPONENTS.concat(STYLES_SRC);
 
